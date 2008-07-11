@@ -1,10 +1,9 @@
 #
-# $Id: QmailRemoteXS.pm,v 1.2 2005/01/05 21:23:12 rsandberg Exp $
+# $Id: QmailRemoteXS.pm,v 1.3 2007/11/25 21:23:12 rsandberg Exp $
 
 package Mail::QmailRemoteXS;
 
 use strict;
-use Carp;
 use vars qw($VERSION @ISA @EXPORT_OK);
 
 require Exporter;
@@ -18,7 +17,7 @@ require AutoLoader;
 @EXPORT_OK = qw(
 	
 );
-$VERSION = '1.2';
+$VERSION = '1.3';
 
 bootstrap Mail::QmailRemoteXS $VERSION;
 
@@ -32,7 +31,7 @@ __END__
 
 =head1 NAME
 
-Mail::QmailRemoteXS - Lightweight C-code (XS) SMTP send function based on Qmail's qmail-remote
+Mail::QmailRemoteXS - Lightweight (XS) SMTP send function based on Qmail's qmail-remote
 
 =head1 SYNOPSIS
 
@@ -42,7 +41,7 @@ Mail::QmailRemoteXS - Lightweight C-code (XS) SMTP send function based on Qmail'
 
 =head1 DESCRIPTION
 
-This module provides a single function C<mail> that sends an email via SMTP. It uses an XS implementation of
+This module provides a single function C<mail> that sends an e-mail message via SMTP. It uses an XS implementation of
 Qmail's qmail-remote binary written in C so is very lightweight and fast (compared to Net::SMTP).
 
 The difference between Mail::QmailRemote (IKEBE Tomohiro) and Mail::QmailRemoteXS is that the former requires
@@ -72,7 +71,7 @@ Some reports of C<mail> hanging indefinitely during an SMTP session.
 
 =head1 AUTHOR
 
-Reed Sandberg (reed_sandberg 'AT' yahoo dot com)
+Reed Sandberg, E<lt>reed_sandberg Ӓ yahooE<gt>
 
 
 =head1 SEE ALSO

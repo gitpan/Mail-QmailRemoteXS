@@ -4,6 +4,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'	=> 'Mail::QmailRemoteXS',
     'VERSION_FROM' => 'QmailRemoteXS.pm', # finds $VERSION
+    'AUTHOR' => 'Reed Sandberg',
     'LIBS'	=> ['-lresolv'],   # e.g., '-lm' 
     'DEFINE'	=> '',     # e.g., '-DHAVE_SOMETHING' 
     'INC'	=> '',     # e.g., '-I/usr/include/other' 
